@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Summarization </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Summarization </h1>
+        <div class="card">
+            <div class="card-body">
+                <p><strong>Patient Name:</strong> {{ patient_name }}</p>
+                <p><strong>Doctor Name:</strong> {{ doctor_name }}</p>
+                <p><strong>Date:</strong> {{ date }}</p>
+                <p><strong>Summary:</strong></p>
+                <p>{{ summary }}</p>
+            </div>
+        </div>
+        <a href="/" class="btn btn-primary mt-4">Summarize another text</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
