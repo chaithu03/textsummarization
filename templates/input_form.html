@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Report Summarization </h1>
-        <form action="/" method="post" class="mt-4">
+        <h1>Report Summarization</h1>
+        <form action="/" method="post" enctype="multipart/form-data" class="mt-4">
             <div class="form-group">
                 <label for="patient_name">Patient Name:</label>
                 <input type="text" id="patient_name" name="patient_name" class="form-control" required>
@@ -24,7 +24,11 @@
             </div>
             <div class="form-group">
                 <label for="text">Paragraph:</label>
-                <textarea id="text" name="text" rows="10" class="form-control" required></textarea>
+                <textarea id="text" name="text" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">Upload PDF:</label>
+                <input type="file" id="file" name="file" class="form-control-file">
             </div>
             <button type="submit" class="btn btn-primary">Summarize</button>
         </form>
